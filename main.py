@@ -1,10 +1,6 @@
-"""Solve a multiple knapsack problem using a MIP solver."""
-import math
 import sys
-
 from ortools.linear_solver import pywraplp
 import chardet
-#rawdata = open(infile, 'rb').read()
 
 def create_data_model():
     """Read the data from the text file."""
@@ -129,7 +125,5 @@ def main():
         print(f'Total cost: {total_cost}')
     else:
         print('The problem does not have an optimal solution.')
-
-
 if __name__ == '__main__':
     main()
